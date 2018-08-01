@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+
+<body style="background-color: #a29bfe; padding: 10px; color: white;">
+    <div style="background-color: #6c5ce7; border: 3px dotted orange; border-radius: 20px; margin: 10px;">
+        <h1 style="text-align: center;">ข้อมูลส่วนตัว</h1>
+    </div>
+    <div style="background-color: #6c5ce7; border: 3px dotted orange; padding: 30px; border-radius: 20px; margin: 20px;">
+        <form method "GET" action="regis.php">
+            Username :
+            <input type="text" name="username">
+            <p></p>
+            Password :
+            <input type="password" name="password">
+            <p></p>
+            Name Title :
+            <select name="nametitle">
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss">Miss</option>
+            </select>
+            <p></p>
+            First Name :
+            <input type="text" name="firstname">
+            <p></p>
+            Last Name :
+            <input type="text" name="lastname">
+            <p></p>
+            Gender :
+            <input type="radio" name="gender" value="male"> : male
+            <input type="radio" name="gender" value="female"> : female
+            <p></p>
+            Date :
+            <select name="date">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            Month :
+            <select name="month">
+                <option value="January">January</option>
+                <option value="Fabuary">Fabuary</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Auguse">Auguse</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">Decomber</option>
+            </select>
+            Year :
+            <input type="text" name="year">
+            <p></p>
+            Birthday:
+            <input type="date" name="bday">
+            <p></p>
+            Age :
+            <select name="age">
+                <option value="0-20" selected>0-20</option>
+                <option value="20-30">20-30</option>
+                <option value="30-50">30-50</option>
+            </select>
+            <p></p>
+            Email :
+            <input type="text" name="email">
+            <p></p>
+            Hobby :
+            <input type="checkbox" name="hobby1" value="game">:game
+            <input type="checkbox" name="hobby2" value="music">:music
+            <input type="checkbox" name="hobby3" value="book">:book
+            <input type="checkbox" name="hobby4" value="spot">:spot
+            <p></p>
+            <input type="submit" value="register">
+            <input type="reset" value="cancle">
+        </form>
+    </div>
+    <div style="text-align: center">
+        <p>Created by SumetPH</p>
+    </div>
+</body>
+
+</html>
