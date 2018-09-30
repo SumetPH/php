@@ -4,22 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	 crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	 crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	 crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+	 <script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 	<link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="./css/css-main.css" rel="stylesheet" type="text/css"> -->
+	<link href="./css/css-main.css" rel="stylesheet" type="text/css">
 	<title>เข้าสู่ระบบ</title>
 </head>
 
@@ -78,6 +68,26 @@
 				
 				mysql_close(); 
 			?>
+			</div>
+		</div>
+	</div>
+	<div class="panel-group" style="position: fixed; bottom: 0px; right: 0; left: 0; margin-bottom: 0;">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" href="#collapse1">จัดทำโดย</a>
+				</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="alert alert-success" style="padding: 30px;">
+						<p>ชื่อ-สกุล : นายสุเมธ ผงพิลา</p>
+						<p>รหัสนึกศึกษา : 60522210345-7</p>
+						<p>ห้อง : Isr4B</p>
+						<p></p>
+						<small>Power by Html Css Javascript MySQL Bootstrap</small>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
