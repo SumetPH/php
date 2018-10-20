@@ -34,6 +34,7 @@
 								$username
 							</a>
 							<div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+								<a class='dropdown-item' href='main.php'>หน้าเมนูหลัก</a>
 								<a class='dropdown-item' href='logout.php'>ออกจากระบบ</a>
 							</div>
 						</li>

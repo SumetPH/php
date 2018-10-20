@@ -23,7 +23,7 @@
 				</div>
 				<div class="text-center">
 					<button class="btn btn-success" type="submit">เข้าสู่ระบบ</button>
-					<button class="btn btn-primary" type="reset">รีเซ็ต</button>
+					<button class="btn btn-info" type="reset">รีเซ็ต</button>
 				</div>
 			</form>
 		</div>

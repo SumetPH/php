@@ -26,7 +26,7 @@
 					<input name="email_reg" type="email" class="form-control">
 				</div>
 				<div class="text-center">
-					<button class="btn btn-success" type="submit">สมัครสมาชิก</button>
+					<button class="btn btn-danger" type="submit">สมัครสมาชิก</button>
 					<button class="btn btn-primary" type="reset">รีเซ็ต</button>
 				</div>
 			</form>

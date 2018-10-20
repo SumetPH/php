@@ -9,6 +9,12 @@
 		<div class="p-5 text-center">
 		<?php
 			$id = $_GET[id];
+			$image = $_GET[image];
+			
+			if(strstr($image,"images/words/")){
+				unlink($image);
+			}
+
 			include('connect.php');
 			$sql = "delete from tb_words where id='$id'";
 			$result = mysql_db_query($db_name,$sql);

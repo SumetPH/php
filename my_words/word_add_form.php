@@ -2,9 +2,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<?php include('head.php'); ?>
 </head>
+
 <body>
 	<?php include('navbar.php'); ?>
 	<div class="container pt-3">
@@ -12,7 +14,7 @@
 			<h3>เพิ่มคำศัพท์</h3>
 		</div>
 		<div class="col-md-6 offset-md-3 jumbotron">
-			<form action="word_add.php" method="post">
+			<form id="form" action="word_add.php" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-md-9">
 						<div class="form-group">
@@ -35,13 +37,38 @@
 					<input name="trans" class="form-control" type="text">
 				</div>
 				<div class="form-group">
-					<label for="image">รูปภาพ (url)</label>
-					<input name="image" class="form-control" type="text">
+					<span>รูปภาพ (File) : </span>
+					<input type="radio" name="img_select" value="file" checked>
+					<span style="padding-left: 1rem;">รูปภาพ (Url) : </span>
+					<input type="radio" name="img_select" value="url">
+				</div>
+				<div id="f_file" class="form-group">
+					<input type="file" name="file">
+				</div>
+				<div id="f_url" class="form-group" style="display: none">
+					<input name="url" class="form-control" type="text">
 				</div>
 				<button type="submit" class="btn btn-info btn-block">บันทืก</button>
 				<button type="reset" class="btn btn-primary btn-block">รีเซ็ต</button>
 			</form>
 		</div>
 	</div>
+
+	<script>
+		$(document).ready(function () {
+			$("#form input").on("change", function () {
+				$r_value = $("#form input[name=img_select]:checked").val();
+				if ($r_value == "file") {
+					$("#f_url").css("display", "none");
+					$("#f_file").css("display", "block");
+				}
+				if ($r_value == "url") {
+					$("#f_url").css("display", "block");
+					$("#f_file").css("display", "none");
+				}
+			})
+		})
+	</script>
 </body>
+
 </html>

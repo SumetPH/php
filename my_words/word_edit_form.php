@@ -26,7 +26,7 @@
 			<?php echo $type; ?>
 		</div>
 		<div class="col-md-6 offset-md-3 jumbotron">
-			<form action="word_edit.php" method="post">
+			<form action="word_edit.php" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-md-9">
 						<div class="form-group">
@@ -53,6 +53,7 @@
 					<label for="image">รูปภาพ (url)</label>
 					<input name="image" class="form-control" type="text" value="<?= $image ?>">
 				</div>
+				<input type="file" name="file" value="images/words/10bfd443d656aa0fd93ce9c2d9601e4e4964d558.jpg">
 				<button type="submit" class="btn btn-info btn-block">บันทืก</button>
 				<button type="reset" class="btn btn-primary btn-block">รีเซ็ต</button>
 			</form>

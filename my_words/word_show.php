@@ -42,7 +42,7 @@
 										<input type='hidden' name='image' value='$record[image]'>
 										<button class='btn btn-warning btn-block' type='submit'>แก้ไข</button>
 									</form>
-									<a class='btn btn-primary btn-block' href=\"word_delete.php?id=$record[id]\" onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">ลบ</a>
+									<a class='btn btn-primary btn-block' href=\"word_delete.php?id=$record[id]&image=$record[image]\" onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">ลบ</a>
 								</div>
 							</div>
 						</div>

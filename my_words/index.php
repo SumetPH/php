@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php 
+	session_start(); 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,14 +32,32 @@
 				<p>รายวิชา การเขียนโปรแกรมเว็บแบบพลวัติ <br> อาจารย์ มานิตย์ สานอก</p>
 			</div>
 			<div class="row">
-				<div class="col-md-3"></div>
-				<div class="col-md-3">
-					<a href="login_form.php" class="btn btn-info btn-block">เข้าสู่ระบบ</a>
-				</div>
-				<div class="col-md-3">
-					<a href="register_form.php" class="btn btn-primary btn-block">ลงทะเบียน</a>
-				</div>
-				<div class="col-md-3"></div>
+			<?php 
+				$username = $_SESSION[sess_username];
+
+				if($username == "") { 
+					echo "
+						<div class='col-md-3'></div>
+						<div class='col-md-3'>
+							<a href='login_form.php' class='btn btn-info btn-block'>เข้าสู่ระบบ</a>
+						</div>
+						<div class='col-md-3'>
+							<a href='register_form.php' class='btn btn-primary btn-block'>ลงทะเบียน</a>
+						</div>
+						<div class='col-md-3'></div>
+					";
+				} else {
+					echo "
+						<div class='col-md-4'></div>
+						<div class='col-md-4'>
+							<a href='main.php' class='btn btn-success btn-block'>หน้าเมนูหลัก</a>
+						</div>
+						<div class='col-md-4'></div>
+					";
+				}
+
+			?>
+				
 			</div>
 		</div>
 	</div>
