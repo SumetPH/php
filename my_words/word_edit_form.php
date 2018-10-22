@@ -9,6 +9,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
 	<?php include('navbar.php'); ?>
 	<div class="container pt-3">
@@ -42,6 +44,8 @@
 							<option value="verb">verb</option>
 							<option value="adjective">adjective</option>
 							<option value="adverb">adverb</option>
+							<option value="preposition">preposition</option>
+							<option value="conjunction">conjunction</option>
 						</select>
 					</div>
 				</div>
@@ -49,15 +53,38 @@
 					<label for="trans">คำแปล</label>
 					<input name="trans" class="form-control" type="text" value="<?= $trans ?>">
 				</div>
-				<div class="form-group">
-					<label for="image">รูปภาพ (url)</label>
-					<input name="image" class="form-control" type="text" value="<?= $image ?>">
+				<div id="example_img">
+					<label>ตัวอย่างรูปภาพ</label>
+					<img class="img-fluid" src="<?= $image ?>" alt="">
 				</div>
-				<input type="file" name="file" value="images/words/10bfd443d656aa0fd93ce9c2d9601e4e4964d558.jpg">
+				<div class="form-group">
+					เปลื่ยนรูปภาพ :
+					<input type="checkbox" name="chk_img" id="chk_img" value="1">
+				</div>
+				<div id="file_img" class="form-group" style="display:none">
+					<label for="image">รูปภาพ</label>
+					<br>
+					<input name="file" type="file">
+				</div>
+				<input type="hidden" value="<?= $image ?>" name="image">
 				<button type="submit" class="btn btn-info btn-block">บันทืก</button>
 				<button type="reset" class="btn btn-primary btn-block">รีเซ็ต</button>
 			</form>
 		</div>
 	</div>
+	<script>
+		$(document).ready(function () {
+			$("#chk_img").change(function () {
+				if ($(this).is(":checked")) {
+					$("#file_img").css("display", "block")
+					$("#example_img").css("display", "none")
+				} else {
+					$("#file_img").css("display", "none")
+					$("#example_img").css("display", "block")
+				}
+			})
+		})
+	</script>
 </body>
+
 </html>

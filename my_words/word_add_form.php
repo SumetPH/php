@@ -29,6 +29,8 @@
 							<option value="verb">verb</option>
 							<option value="adjective">adjective</option>
 							<option value="adverb">adverb</option>
+							<option value="preposition">preposition</option>
+							<option value="conjunction">conjunction</option>
 						</select>
 					</div>
 				</div>
@@ -37,38 +39,15 @@
 					<input name="trans" class="form-control" type="text">
 				</div>
 				<div class="form-group">
-					<span>รูปภาพ (File) : </span>
-					<input type="radio" name="img_select" value="file" checked>
-					<span style="padding-left: 1rem;">รูปภาพ (Url) : </span>
-					<input type="radio" name="img_select" value="url">
-				</div>
-				<div id="f_file" class="form-group">
-					<input type="file" name="file">
-				</div>
-				<div id="f_url" class="form-group" style="display: none">
-					<input name="url" class="form-control" type="text">
+					<label for="file">รูปภาพ</label>
+					<br>
+					<input name="file" type="file">
 				</div>
 				<button type="submit" class="btn btn-info btn-block">บันทืก</button>
 				<button type="reset" class="btn btn-primary btn-block">รีเซ็ต</button>
 			</form>
 		</div>
 	</div>
-
-	<script>
-		$(document).ready(function () {
-			$("#form input").on("change", function () {
-				$r_value = $("#form input[name=img_select]:checked").val();
-				if ($r_value == "file") {
-					$("#f_url").css("display", "none");
-					$("#f_file").css("display", "block");
-				}
-				if ($r_value == "url") {
-					$("#f_url").css("display", "block");
-					$("#f_file").css("display", "none");
-				}
-			})
-		})
-	</script>
 </body>
 
 </html>

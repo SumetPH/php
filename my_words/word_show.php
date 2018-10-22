@@ -25,8 +25,7 @@
 					while ($record = mysql_fetch_array($result)){
 						echo "
 						<div class='col-md-4 p-3'>
-							<div class='card'>
-								<img class='card-img-top' src='$record[image]'>
+							<div class='card'>								<img class='card-img-top' src='$record[image]'>
 								<div class='card-body'>
 									<div class='d-flex align-items-end'>
 										<h4 class='m-0 pr-2'>$record[word]</h4> 

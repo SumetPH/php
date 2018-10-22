@@ -9,8 +9,8 @@
 	<?php include('head.php'); ?>
 	<style>
 		body {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-				url('images/bg.jpg');
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url('images/system/bg.jpg');
 			background-size: cover;
 		}
 	</style>
@@ -24,7 +24,7 @@
 				<h2>คลังคำศัพท์</h2>
 				<p>(เว็บไซต์สำหรับการจดคำศัพท์)</p>
 				<h4>จัดทำโดย</h4>
-				<img id="img" class="img-thumbnail animated pulse" src="images/sumetph.jpg" style="width: 200px; height: 200px; border-radius: 50%;"
+				<img id="img" class="img-thumbnail animated pulse" src="images/system/sumetph.jpg" style="width: 200px; height: 200px; border-radius: 50%;"
 				 alt="">
 				<p></p>
 				<h5>นายสุเมธ ผงพิลา <br> 60522210345-7 ISR4B</h5>
