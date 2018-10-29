@@ -37,6 +37,7 @@
 									<form method='get' action='word_edit_form.php'>
 										<input type='hidden' name='id' value='$record[id]'>
 										<input type='hidden' name='word' value='$record[word]'>
+										<input type='hidden' name='type' value='$record[type]'>
 										<input type='hidden' name='trans' value='$record[trans]'>
 										<input type='hidden' name='image' value='$record[image]'>
 										<button class='btn btn-warning btn-block' type='submit'>แก้ไข</button>

@@ -40,12 +40,12 @@
 					<div class="col-md-3">
 						<label for="type">ประเภท</label>
 						<select name="type" class="custom-select" name="type">
-							<option value="noun">noun</option>
-							<option value="verb">verb</option>
-							<option value="adjective">adjective</option>
-							<option value="adverb">adverb</option>
-							<option value="preposition">preposition</option>
-							<option value="conjunction">conjunction</option>
+							<option <? if($type == 'noun') echo "selected"; ?> value="noun">noun</option>
+							<option <? if($type == 'verb') echo "selected"; ?> value="verb"  >verb</option>
+							<option <? if($type == 'adjective') echo "selected"; ?> value="adjective">adjective</option>
+							<option <? if($type == 'adverb') echo "selected"; ?> value="adverb">adverb</option>
+							<option <? if($type == 'preposition') echo "selected"; ?> value="preposition">preposition</option>
+							<option <? if($type == 'conjunction') echo "selected"; ?> value="conjunction">conjunction</option>
 						</select>
 					</div>
 				</div>
